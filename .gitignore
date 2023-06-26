@@ -1,0 +1,65 @@
+# Dependencias instaladas por npm o yarn
+/node_modules
+
+# Archivo de configuración de npm
+/package-lock.json
+
+# Carpeta generada por el comando `npm build`
+/build
+
+# Archivos de registro
+*.log
+
+# Archivos temporales
+*.tmp
+
+# Archivos de respaldo
+*.bak
+
+# Archivos IDE y editores de texto
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Carpetas generadas por herramientas
+/dist
+/out
+/.cache
+/.sass-cache
+/coverage
+
+# Variables de entorno
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de compilación
+*.js
+*.jsx
+*.mjs
+*.ts
+*.tsx
+
+# Archivos de compilación de TypeScript
+*.js.map
+*.jsx.map
+*.mjs.map
+*.ts.map
+*.tsx.map
+
+# Archivos de compilación de Babel
+/dist
+/lib
+
+# Archivos generados por herramientas de construcción
+/.webpack
