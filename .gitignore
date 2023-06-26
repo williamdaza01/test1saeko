@@ -43,12 +43,7 @@
 .env.test.local
 .env.production.local
 
-# Archivos de compilación
-*.js
-*.jsx
-*.mjs
-*.ts
-*.tsx
+
 
 # Archivos de compilación de TypeScript
 *.js.map
