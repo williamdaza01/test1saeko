@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Piedra, Papel y Tijeras</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <h1>Piedra, Papel y Tijeras</h1>
-  
-  <div id="game">
-    <div id="options">
-      <button id="rock" onclick="play('rock')">Piedra</button>
-      <button id="paper" onclick="play('paper')">Papel</button>
-      <button id="scissors" onclick="play('scissors')">Tijeras</button>
-    </div>
-    <div id="result"></div>
-  </div>
+  <head>
+    <title>Piedra, Papel y Tijeras</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/aae4a5aa7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <i class="fa-solid fa-rocket"></i>
+      <h1>Piedra, Papel y Tijeras</h1>
+      <span>William Daza</span>
+    </nav>
 
-  <script src="index.js"></script>
-</body>
+    <div class="container">
+      <div id="game">
+        <div class="player">
+          <div class="user">
+            <h3>Tu</h3>
+          </div>
+          <div id="optionsPlayer">
+            <a id="rock" onclick="play('rock')">
+              <i class="fa-regular fa-hand-back-fist"></i>
+            </a>
+            <a id="paper" onclick="play('paper')"
+              ><i class="fa-regular fa-hand"></i
+            ></a>
+            <a id="scissors" onclick="play('scissors')"
+              ><i class="fa-regular fa-hand-scissors"></i>
+            </a>
+          </div>
+        </div>
+        <div id="score">
+          <div class="score_result">
+            <span id="player-score">0</span> -
+            <span id="computer-score">0</span>
+          </div>
+          <span style="padding-bottom: 15px; font-size: small">Marcador</span>
+          <div class="line"></div>
+        </div>
+        <div class="pc">
+          <h3 class="user">Computadora</h3>
+          <div id="optionsPc">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i>
+            <i class="fa-regular fa-hand-scissors"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="toast">
+      <div class="message"></div>
+      <div class="modal-content">
+        <i class="player-icon"></i>
+        <div class="line" style="height: 150px"></div>
+        <i class="computer-icon"></i>
+      </div>
+      <span>Piedra, Papel y Tijeras</span>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
